@@ -1,0 +1,31 @@
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Node.gitignore
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
