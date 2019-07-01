@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-hooks-boilerplate",
+  "name": "react-redux-hooks-sample",
   "version": "0.0.1",
-  "description": "React + Redux boilerplate with hooks",
+  "description": "React Hooks + Redux sample",
   "main": "src/index.jsx",
   "author": "ebkn",
   "license": "MIT",

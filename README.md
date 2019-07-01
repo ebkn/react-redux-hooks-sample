@@ -1,1 +1,1 @@
-# React+Redux with hooks boilerplate
+# React Hooks + Redux sample
