@@ -1,14 +1,20 @@
 import React, { Fragment } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Todo from '../components/todo';
+import AddTodo from '../components/addTodo';
 
 const getTodos = state => state.todos;
 const Todos = () => {
   const todos = useSelector(getTodos);
+
+  const dispatch = useDispatch();
+  const addTodo = ({ id, content }) => dispatch({ type: 'ADD_TODO', id, content });
+
   return (
     <Fragment>
-      {todos.map(({ id, content }) => (
-        <Todo id={id} content={content} />
+      <AddTodo addTodo={addTodo} />
+      {todos.map(({ id, content }, index) => (
+        <Todo key={index} id={id} content={content} />
       ))}
     </Fragment>
   );
