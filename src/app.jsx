@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Todos from './containers/todos';
 
 const App = () => (
-  <div>Hello</div>
+  <Fragment>
+    <Todos />
+  </Fragment>
 );
 export default App;
